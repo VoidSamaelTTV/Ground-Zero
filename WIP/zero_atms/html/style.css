@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    background: transparent;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    z-index: 9999;
+    transition: opacity 0.5s; /* Smooth show/hide effect */
+}
+
+#nui {
+    text-align: center;
+}
+
+#playerCount {
+    margin-bottom: 5px;
+}
+
+#progressContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#progressText {
+    margin-right: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+#progressBar {
+    width: 100%;
+    max-width: 400px;
+    height: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#progress {
+    background: #00ff00;
+    height: 100%;
+    width: 0%;
+    transition: width 1s;
+}
+
+#progressBar:hover {
+    border-color: #00ff00; /* Change border color on hover */
+}

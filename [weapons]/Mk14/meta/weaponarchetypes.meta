@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>mk14</modelName>
+			<txdName>mk14</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>mk14_clip_01</modelName>
+			<txdName>mk14_clip_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>		
+		<Item>
+			<modelName>mk14_clip_02</modelName>
+			<txdName>mk14_clip_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>mk14_clip_03</modelName>
+			<txdName>mk14_clip_01</txdName>
+			<ptfxAssetName>NULL</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>			
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>
+

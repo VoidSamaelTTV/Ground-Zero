@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponComponentInfoBlob>
+	<Infos>
+		<Item type="CWeaponComponentClipInfo">
+			<Name>COMPONENT_MK14_CLIP_01</Name>
+			<Model>mk14_clip_01</Model>
+			<LocName>WCT_CLIP1</LocName>
+			<LocDesc>WCD_CR_CLIP1</LocDesc>
+			<AttachBone>AAPClip</AttachBone>
+			<WeaponAttachBone>WAPClip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<ClipSize value="15"/>
+			<AmmoInfo/>
+			<ReloadData ref="RELOAD_DEFAULT"/>
+		</Item>	
+		<Item type="CWeaponComponentClipInfo">
+			<Name>COMPONENT_MK14_CLIP_02</Name>
+			<Model>mk14_clip_02</Model>
+			<LocName>WCT_CLIP1</LocName>
+			<LocDesc>WCD_CR_CLIP1</LocDesc>
+			<AttachBone>AAPClip</AttachBone>
+			<WeaponAttachBone>WAPClip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<ClipSize value="10"/>
+			<AmmoInfo/>
+			<ReloadData ref="RELOAD_DEFAULT"/>
+		</Item>	
+		<Item type="CWeaponComponentClipInfo">
+			<Name>COMPONENT_MK14_CLIP_03</Name>
+			<Model>mk14_clip_03</Model>
+			<LocName>WCT_CLIP1</LocName>
+			<LocDesc>WCD_CR_CLIP1</LocDesc>
+			<AttachBone>AAPClip</AttachBone>
+			<WeaponAttachBone>WAPClip</WeaponAttachBone>
+			<AccuracyModifier type="NULL"/>
+			<DamageModifier type="NULL"/>
+			<bShownOnWheel value="false"/>
+			<CreateObject value="true"/>
+			<HudDamage value="0"/>
+			<HudSpeed value="0"/>
+			<HudCapacity value="0"/>
+			<HudAccuracy value="0"/>
+			<HudRange value="0"/>
+			<ClipSize value="20"/>
+			<AmmoInfo/>
+			<ReloadData ref="RELOAD_DEFAULT"/>
+		</Item>		
+	</Infos>
+	<InfoBlobName/>
+</CWeaponComponentInfoBlob>
+
