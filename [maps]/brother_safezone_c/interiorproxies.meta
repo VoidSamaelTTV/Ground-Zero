@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SInteriorOrderData>
+  <startFrom value="2500" />
+  <proxies>
+        <Item>brother_rivia_observ_milo</Item>
+        <Item>brother_rivia_observatory_underground_milo_</Item>
+	</proxies>
+</SInteriorOrderData>

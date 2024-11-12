@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <style>
+            body {
+                overflow: hidden;
+                color: white;
+                font-size: 1.5vh
+            }
+
+            .progressbar {
+                position: absolute;
+                bottom: 6.2vh; /* changed from top */
+                width: 1.5vh;
+                height: 17.8vh;
+                left: 173.7vh;
+                border: 1px solid #ffef52;
+                background-color: rgb(255 239 82 / 15%);
+                display: flex;
+                justify-content: center;
+                align-items: flex-end; /* changed from flex-start */
+                z-index: 9999;
+                border-radius: 0;
+            }
+
+            .pro {
+                position: relative;
+                background-color: #ffef52;
+                width: 3.15vh;
+                height: 50%;
+                transition: height 0.2s;
+                z-index: 9999;
+                animation: glowing 1s ease-in-out infinite;
+            }
+
+            .glowing-lines {
+                position: absolute;
+                bottom: 6.2vh; /* changed from top */
+                width: 1.5vh;
+                height: 17.8vh;
+                left: 35.7vh;
+                background: linear-gradient(90deg, rgba(91, 208, 116, 0) 0%, rgba(91, 208, 116, 0.3) 10%, rgba(91, 208, 116, 0.7) 50%, rgba(91, 208, 116, 0.3) 90%, rgba(91, 208, 116, 0) 100%);
+                background-size: 200% 200%;
+                animation: glowing-lines 1s ease-in-out infinite;
+            }
+
+            @keyframes glowing-lines {
+                0% {
+                    background-position: 0 0;
+                }
+                100% {
+                    background-position: 100% 0;
+                }
+            }
+            @keyframes glowing {
+                0% {
+                    box-shadow: 0 0 5px rgba(91, 208, 116, 0.4);
+                    opacity: 0.4;
+                }
+                10% {
+                    box-shadow: 0 0 10px rgba(91, 208, 116, 0.4);
+                    opacity: 0.5;
+                }
+                20% {
+                    box-shadow: 0 0 20px rgba(91, 208, 116, 0.4);
+                    opacity: 0.6;
+                }
+                30% {
+                    box-shadow: 0 0 30px rgba(91, 208, 116, 0.4);
+                    opacity: 0.7;
+                }
+                40% {
+                    box-shadow: 0 0 40px rgba(91, 208, 116, 0.4);
+                    opacity: 0.8;
+                }
+                50% {
+                    box-shadow: 0 0 50px rgba(91, 208, 116, 0.4);
+                    opacity: 0.9;
+                }
+                60% {
+                    box-shadow: 0 0 60px rgba(91, 208, 116, 0.4);
+                    opacity: 1;
+                }
+                70% {
+                    box-shadow: 0 0 70px rgba(91, 208, 116, 0.4);
+                    opacity: 0.9;
+                }
+                80% {
+                    box-shadow: 0 0 80px rgba(91, 208, 116, 0.4);
+                    opacity: 0.8;
+                }
+                90% {
+                    box-shadow: 0 0 90px rgba(91, 208, 116, 0.4);
+                    opacity: 0.7;
+                }
+                100% {
+                    box-shadow: 0 0 100px rgba(91, 208, 116, 0.4);
+                    opacity: 0.6;
+                }
+            }
+
+            .pro {
+                animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+            }
+
+
+
+            .my-image {
+                position: absolute;
+                top: 92.6vh;
+                left: 172.85vh;
+                width: 3.5vh;
+                height: 3.5vh;
+                background-color: rgb(39 93 48 / 50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999;
+                border-radius: 50%;
+            }
+
+            .my-image img {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="progressbar">
+        <div class="pro"></div>
+    </div>
+    <div class="my-image">
+        <img src="https://i.imgur.com/vb1N4y8.png">
+    </div>
+    <script>
+        var isUIVisible = false; // Initially set to false (hidden)
+
+        window.addEventListener('message', function(event) {
+            switch (event.data.action) {
+                case 'update':
+                    var rads = event.data.rads;
+                    var maxRads = 200;
+                    var percent = (rads / maxRads) * 100;
+                    $('.pro').css('height', percent + '%');
+                    break;
+                case 'toggle':
+                    isUIVisible = event.data.visible;
+                    if (isUIVisible) {
+                        $('.progressbar, .my-image').show(); // Show UI elements
+                    } else {
+                        $('.progressbar, .my-image').hide(); // Hide UI elements
+                    }
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

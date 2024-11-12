@@ -1,0 +1,5 @@
+Join Our Discord Server For More Maps - https://discord.gg/uY7m8Rt8yU
+
+Installation FIVEM:
+1) - Copy/Past the folder " FOB_Geronimo" in your resource folder 
+2) - Open your server.cfg and Ensure FOB_Geronimo
