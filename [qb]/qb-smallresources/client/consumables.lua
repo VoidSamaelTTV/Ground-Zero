@@ -967,27 +967,25 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor1', function()
     end
     local ped = PlayerPedId()
     local PlayerData = QBCore.Functions.GetPlayerData()
+    
+    -- Start progress bar for using the armor item
     QBCore.Functions.Progressbar('UseSuperLightArmor1', Lang:t('consumables.heavy_armor_progress'), 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
         disableMouse = false,
         disableCombat = true,
     }, {}, {}, {}, function() -- Done
+        -- Remove the conditional check on vestDrawable and always change the drawable
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
-                    SetPedComponentVariation(ped, 8, 204, 0, 2)
-                end
+                -- Always set to the desired vest ID (e.g., 204) and texture (0)
+                SetPedComponentVariation(ped, 8, 204, 0, 2)
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
+                -- For female character, always set to a different vest ID (e.g., 195)
                 SetPedComponentVariation(ped, 8, 195, 0, 2)
             end
         end
+        -- Trigger server event to finalize armor usage
         TriggerServerEvent('consumables:server:UseSuperLightArmor1')
     end)
 end)
@@ -1000,6 +998,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor2', function()
     end
     local ped = PlayerPedId()
     local PlayerData = QBCore.Functions.GetPlayerData()
+
+    -- Start progress bar for using the armor item
     QBCore.Functions.Progressbar('UseSuperLightArmor2', Lang:t('consumables.heavy_armor_progress'), 5000, false, true, {
         disableMovement = false,
         disableCarMovement = false,
@@ -1008,16 +1008,10 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor2', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
-                    SetPedComponentVariation(ped, 8, 204, 1, 2)
-                end
+                -- Always set to the desired vest ID (e.g., 204) and texture (1)
+                SetPedComponentVariation(ped, 8, 204, 1, 2)
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
+                -- For female character, always set to a different vest ID (e.g., 195)
                 SetPedComponentVariation(ped, 8, 195, 1, 2)
             end
         end
@@ -1041,16 +1035,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor3', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 2, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 2, 2)
             end
         end
@@ -1074,16 +1060,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor4', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 3, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 3, 2)
             end
         end
@@ -1107,16 +1085,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor5', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 4, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 4, 2)
             end
         end
@@ -1140,16 +1110,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor6', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 5, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 5, 2)
             end
         end
@@ -1173,16 +1135,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor7', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 6, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 6, 2)
             end
         end
@@ -1206,16 +1160,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor8', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 7, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 7, 2)
             end
         end
@@ -1239,16 +1185,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor9', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 8, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 8, 2)
             end
         end
@@ -1272,16 +1210,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor10', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 9, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 9, 2)
             end
         end
@@ -1305,16 +1235,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor11', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 10, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 10, 2)
             end
         end
@@ -1338,16 +1260,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor12', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 11, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 11, 2)
             end
         end
@@ -1371,16 +1285,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor13', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 12, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 12, 2)
             end
         end
@@ -1404,16 +1310,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor14', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 13, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 13, 2)
             end
         end
@@ -1437,16 +1335,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor15', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 14, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 14, 2)
             end
         end
@@ -1470,16 +1360,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor16', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 15, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 15, 2)
             end
         end
@@ -1503,16 +1385,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor17', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 16, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 16, 2)
             end
         end
@@ -1536,16 +1410,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor18', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 17, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 17, 2)
             end
         end
@@ -1569,16 +1435,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor19', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 18, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 18, 2)
             end
         end
@@ -1602,16 +1460,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor20', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 204 then
-                    SetPedComponentVariation(ped, 8, 204, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 204, 19, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 195, 19, 2)
             end
         end
@@ -1635,16 +1485,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor21', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 0, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 0, 2)
             end
         end
@@ -1668,16 +1510,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor22', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 1, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 1, 2)
             end
         end
@@ -1701,16 +1535,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor23', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 2, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 2, 2)
             end
         end
@@ -1734,16 +1560,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor24', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 3, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 3, 2)
             end
         end
@@ -1767,16 +1585,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor25', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 4, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 4, 2)
             end
         end
@@ -1800,16 +1610,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor26', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 5, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 5, 2)
             end
         end
@@ -1833,16 +1635,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor27', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 6, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 6, 2)
             end
         end
@@ -1866,16 +1660,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor28', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 7, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 7, 2)
             end
         end
@@ -1899,16 +1685,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor29', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 8, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 8, 2)
             end
         end
@@ -1932,16 +1710,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor30', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 9, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 9, 2)
             end
         end
@@ -1965,16 +1735,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor31', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 10, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 10, 2)
             end
         end
@@ -1998,16 +1760,8 @@ RegisterNetEvent('consumables:client:UseSuperLightArmor32', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 186 then
-                    SetPedComponentVariation(ped, 8, 186, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 186, 11, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 188, 11, 2)
             end
         end
@@ -2031,16 +1785,8 @@ RegisterNetEvent('consumables:client:UseLightArmor1', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 159 then
-                    SetPedComponentVariation(ped, 8, 159, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 159, 0, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 189, 0, 2)
             end
         end
@@ -2064,16 +1810,8 @@ RegisterNetEvent('consumables:client:UseLightArmor2', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 159 then
-                    SetPedComponentVariation(ped, 8, 159, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 159, 1, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 189, 1, 2)
             end
         end
@@ -2097,16 +1835,8 @@ RegisterNetEvent('consumables:client:UseLightArmor3', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 159 then
-                    SetPedComponentVariation(ped, 8, 159, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 159, 2, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 189, 2, 2)
             end
         end
@@ -2130,16 +1860,8 @@ RegisterNetEvent('consumables:client:UseLightArmor4', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 159 then
-                    SetPedComponentVariation(ped, 8, 159, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 159, 3, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 189, 3, 2)
             end
         end
@@ -2163,16 +1885,8 @@ RegisterNetEvent('consumables:client:UseLightArmor5', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 159 then
-                    SetPedComponentVariation(ped, 8, 159, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 159, 4, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 189, 4, 2)
             end
         end
@@ -2196,16 +1910,8 @@ RegisterNetEvent('consumables:client:UseMidArmor1', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 160 then
-                    SetPedComponentVariation(ped, 8, 160, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 160, 0, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 190, 0, 2)
             end
         end
@@ -2229,16 +1935,8 @@ RegisterNetEvent('consumables:client:UseMidArmor2', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 160 then
-                    SetPedComponentVariation(ped, 8, 160, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 160, 1, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 190, 1, 2)
             end
         end
@@ -2262,16 +1960,8 @@ RegisterNetEvent('consumables:client:UseMidArmor3', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 160 then
-                    SetPedComponentVariation(ped, 8, 160, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 160, 2, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 190, 2, 2)
             end
         end
@@ -2295,16 +1985,8 @@ RegisterNetEvent('consumables:client:UseMidArmor4', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 160 then
-                    SetPedComponentVariation(ped, 8, 160, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 160, 3, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 190, 3, 2)
             end
         end
@@ -2328,16 +2010,8 @@ RegisterNetEvent('consumables:client:UseMidArmor5', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 160 then
-                    SetPedComponentVariation(ped, 8, 160, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 160, 4, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 190, 4, 2)
             end
         end
@@ -2361,16 +2035,8 @@ RegisterNetEvent('consumables:client:UseHeavyArmor1', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 161 then
-                    SetPedComponentVariation(ped, 8, 161, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 161, 0, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 191, 0, 2)
             end
         end
@@ -2394,16 +2060,8 @@ RegisterNetEvent('consumables:client:UseHeavyArmor2', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 161 then
-                    SetPedComponentVariation(ped, 8, 161, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 161, 1, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 191, 1, 2)
             end
         end
@@ -2427,16 +2085,8 @@ RegisterNetEvent('consumables:client:UseHeavyArmor3', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 161 then
-                    SetPedComponentVariation(ped, 8, 161, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 161, 2, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 191, 2, 2)
             end
         end
@@ -2460,16 +2110,8 @@ RegisterNetEvent('consumables:client:UseHeavyArmor4', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 161 then
-                    SetPedComponentVariation(ped, 8, 161, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 161, 3, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 191, 3, 2)
             end
         end
@@ -2493,16 +2135,8 @@ RegisterNetEvent('consumables:client:UseHeavyArmor5', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 161 then
-                    SetPedComponentVariation(ped, 8, 161, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 161, 4, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 191, 4, 2)
             end
         end
@@ -2526,16 +2160,8 @@ RegisterNetEvent('consumables:client:UseExtremeArmor1', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 162 then
-                    SetPedComponentVariation(ped, 8, 162, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 162, 0, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 192, 0, 2)
             end
         end
@@ -2559,16 +2185,8 @@ RegisterNetEvent('consumables:client:UseExtremeArmor2', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 162 then
-                    SetPedComponentVariation(ped, 8, 162, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 162, 1, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 192, 1, 2)
             end
         end
@@ -2592,16 +2210,8 @@ RegisterNetEvent('consumables:client:UseExtremeArmor3', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 162 then
-                    SetPedComponentVariation(ped, 8, 162, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 162, 2, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 192, 2, 2)
             end
         end
@@ -2625,16 +2235,8 @@ RegisterNetEvent('consumables:client:UseExtremeArmor4', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 162 then
-                    SetPedComponentVariation(ped, 8, 162, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 162, 3, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 192, 3, 2)
             end
         end
@@ -2658,16 +2260,8 @@ RegisterNetEvent('consumables:client:UseExtremeArmor5', function()
     }, {}, {}, {}, function() -- Done
         if not Config.Disable.vestDrawable then
             if PlayerData.charinfo.gender == 0 then
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
-                if GetPedDrawableVariation(ped, 8) == 162 then
-                    SetPedComponentVariation(ped, 8, 162, GetPedTextureVariation(ped, 8), 0)
-                else
                     SetPedComponentVariation(ped, 8, 162, 4, 2)
-                end
             else
-                currVest = GetPedDrawableVariation(ped, 8)
-                currVestTexture = GetPedTextureVariation(ped, 8)
                 SetPedComponentVariation(ped, 8, 192, 4, 2)
             end
         end

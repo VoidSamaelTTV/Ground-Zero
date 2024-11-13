@@ -413,7 +413,7 @@ QBCore.Functions.CreateUseableItem('desert_camo_ultralight_strike_vest', functio
 end)
 
 -- splinter_camo_ultralight_strike_vest
-QBCore.Functions.CreateUseableItem('splinter_camo_ultralight_strike_vest', function(source)
+QBCore.Functions.CreateUseableItem('green_camo_ultralight_strike_vest', function(source)
     TriggerClientEvent('consumables:client:UseSuperLightArmor30', source)
 end)
 
@@ -425,6 +425,31 @@ end)
 -- green_ultralight_strike_vest
 QBCore.Functions.CreateUseableItem('green_ultralight_strike_vest', function(source)
     TriggerClientEvent('consumables:client:UseSuperLightArmor32', source)
+end)
+
+-- black_light_strike_vest
+QBCore.Functions.CreateUseableItem('black_light_strike_vest', function(source)
+    TriggerClientEvent('consumables:client:UseLightArmor1', source)
+end)
+
+-- green_light_strike_vest
+QBCore.Functions.CreateUseableItem('green_light_strike_vest', function(source)
+    TriggerClientEvent('consumables:client:UseLightArmor2', source)
+end)
+
+-- orange_light_strike_vest
+QBCore.Functions.CreateUseableItem('orange_light_strike_vest', function(source)
+    TriggerClientEvent('consumables:client:UseLightArmor3', source)
+end)
+
+-- purple_light_strike_vest
+QBCore.Functions.CreateUseableItem('purple_light_strike_vest', function(source)
+    TriggerClientEvent('consumables:client:UseLightArmor4', source)
+end)
+
+-- pink_light_strike_vest
+QBCore.Functions.CreateUseableItem('pink_light_strike_vest', function(source)
+    TriggerClientEvent('consumables:client:UseLightArmor5', source)
 end)
 
 -- black_mid_strike_vest
