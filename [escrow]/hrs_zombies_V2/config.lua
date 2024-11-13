@@ -614,31 +614,25 @@ Config.mapLocations = {
     ['AIRP'] = {
         humansList = 'airp',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10,
     },
     ['ALAMO'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15,
     },
     ['ALTA'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10,
     },
     ['ARMYB'] = {
         humansList = 'military',
         animalsList = 'animals',
         maxHumans = 0,
-        maxAnimals = 10
-    },
-    ['BHAMCA'] = {
-        humansList = 'city',
-        animalsList = 'animals',
-        maxHumans = 35,
         maxAnimals = 10
     },
     ['BANNING'] = {
@@ -650,61 +644,61 @@ Config.mapLocations = {
     ['BEACH'] = {
         humansList = 'beach',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['BHAMCA'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['BRADT'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['BURTON'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['CANNY'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['CCREAK'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['CHAMH'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['CHIL'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['CHU'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['CMSW'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['CYPRE'] = {
@@ -716,43 +710,43 @@ Config.mapLocations = {
     ['DAVIS'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['DELBE'] = {
         humansList = 'beach',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['DELPE'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['DELSOL'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['DTVINE'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['DESRT'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 0,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['EAST_V'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['EBURO'] = {
@@ -777,25 +771,25 @@ Config.mapLocations = {
     ['GALFISH'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['GOLF'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['GRAPES'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['GREATC'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['HARMO'] = {
@@ -807,7 +801,7 @@ Config.mapLocations = {
     ['HAWICK'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['HORS'] = {
@@ -819,19 +813,19 @@ Config.mapLocations = {
     ['HUMLAB'] = {
         humansList = 'hospital',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['JAIL'] = {
         humansList = 'jail',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['KOREAT'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['LACT'] = {
@@ -843,7 +837,7 @@ Config.mapLocations = {
     ['LAGO'] = {
         humansList = 'military',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['LDAM'] = {
@@ -855,7 +849,7 @@ Config.mapLocations = {
     ['LEGSQU'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['LMESA'] = {
@@ -873,37 +867,37 @@ Config.mapLocations = {
     ['MIRR'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['MORN'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['MOVIE'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['MTCHIL'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['MTGORDO'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['MTJOSE'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['MURRI'] = {
@@ -915,43 +909,43 @@ Config.mapLocations = {
     ['NCHU'] = {
         humansList = 'motard',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['NOOSE'] = {
         humansList = 'military',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['OCEANA'] = {
         humansList = 'beach',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['PALCOV'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['PALETO'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['PALFOR'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['PALHIGH'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['PALMPOW'] = {
@@ -963,97 +957,97 @@ Config.mapLocations = {
     ['PBLUFF'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['PBOX'] = {
         humansList = 'hospital',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['PROCOB'] = {
         humansList = 'beach',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['RANCHO'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['RGLEN'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['RICHM'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['ROCKF'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['RTRAK'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['SANAND'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['SANCHIA'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['SANDY'] = {
         humansList = 'farm',
         animalsList = 'animals',
-        maxHumans = 15,
+        maxHumans = 25,
         maxAnimals = 15
     },
     ['SKID'] = {
         humansList = 'police',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['SLAB'] = {
         humansList = 'motard',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['STAD'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['STRAW'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['TATAMO'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['TERMINA'] = {
@@ -1065,49 +1059,49 @@ Config.mapLocations = {
     ['TEXTI'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['TONGVAH'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['TONGVAV'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['VCANA'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['VESP'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['VINE'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['WINDF'] = {
         humansList = 'walk',
         animalsList = 'animals',
-        maxHumans = 5,
+        maxHumans = 15,
         maxAnimals = 20
     },
     ['WVINE'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['ZANCUDO'] = {
@@ -1131,13 +1125,13 @@ Config.mapLocations = {
     ['PROL'] = {
         humansList = 'city',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
     ['ISHEIST'] = {
         humansList = 'military',
         animalsList = 'animals',
-        maxHumans = 35,
+        maxHumans = 45,
         maxAnimals = 10
     },
 }
@@ -1230,7 +1224,7 @@ Config.NestTypes = {
         }, -- false will disable it
         maxHealth = 200.00,
         regenTime = 14400, --- seconds, if nil the nest will not respawn
-        maxZombies = 20,
+        maxZombies = 30,
         ptfx = true,
     },
     ['prison_zombies'] = {
@@ -1472,6 +1466,22 @@ Config.Nests = {
     },
     ['peer6'] = {
         coords = vector3(-1790.1301, -1179.4833, 12.0176),
+        nestType = 'zombie_nest'
+    },
+    ['peer7'] = {
+        coords = vector3(-1700.75, -1079.78, 13.2),
+        nestType = 'zombie_nest'
+    },
+    ['peer8'] = {
+        coords = vector3(-1665.47, -1078.52, 13.15),
+        nestType = 'zombie_nest'
+    },
+    ['peer9'] = {
+        coords = vector3(-1643.79, -1094.29, 13.05),
+        nestType = 'zombie_nest'
+    },
+    ['peer10'] = {
+        coords = vector3(-1605.09, -1047.14, 13.07),
         nestType = 'zombie_nest'
     },
     ['fib1'] = {
