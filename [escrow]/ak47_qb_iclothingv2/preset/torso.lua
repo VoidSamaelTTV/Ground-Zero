@@ -1917,7 +1917,7 @@ Config.Preset.torso = {
         tiger_vinyl_cut = {
             male = {
                 main = {
-                    ['torso2'] = {item = 432, texture = 0} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 430, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 174, texture = 0}, -- check qb-clothing/client/main.lua
@@ -1937,7 +1937,7 @@ Config.Preset.torso = {
         tiger_vinyl = {
             male = {
                 main = {
-                    ['torso2'] = {item = 431, texture = 0} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 429, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 170, texture = 0}, -- check qb-clothing/client/main.lua
@@ -1954,7 +1954,7 @@ Config.Preset.torso = {
                 },
             },
         },
-        green_flight_shirt = {
+        green_flight_jacket = {
             male = {
                 main = {
                     ['torso2'] = {item = 82, texture = 0} -- check qb-clothing/client/main.lua
@@ -2261,7 +2261,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 0, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2281,7 +2281,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 0, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2321,7 +2321,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 55, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 4, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2341,7 +2341,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 55, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 4, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2361,7 +2361,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 55, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 4, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2380,7 +2380,7 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 95, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 13, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
                     ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
@@ -2400,7 +2400,7 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 95, texture = 2} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 13, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
                     ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
@@ -2420,7 +2420,7 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 95, texture = 3} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 13, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
                     ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
@@ -2597,7 +2597,7 @@ Config.Preset.torso = {
         navy_quilted_jacket = {
             male = {
                 main = {
-                    ['torso2'] = {item = 140, texture = 1} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 140, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
@@ -2721,7 +2721,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 15, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 14, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2741,7 +2741,7 @@ Config.Preset.torso = {
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 15, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 14, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2757,11 +2757,11 @@ Config.Preset.torso = {
         burgundy_smoking_jacket = {
             male = {
                 main = {
-                    ['torso2'] = {item = 142, texture = 2} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 142, texture = 8} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 15, texture = 0} -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 14, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2777,7 +2777,7 @@ Config.Preset.torso = {
         black_smoking_jacket = {
             male = {
                 main = {
-                    ['torso2'] = {item = 142, texture = 3} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 142, texture = 9} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
@@ -2797,7 +2797,7 @@ Config.Preset.torso = {
         green_smoking_jacket = {
             male = {
                 main = {
-                    ['torso2'] = {item = 142, texture = 9} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 142, texture = 6} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
@@ -2920,8 +2920,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2940,8 +2940,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 1} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2960,8 +2960,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 2} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -2980,8 +2980,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 3} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -3000,8 +3000,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 4} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -3020,8 +3020,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 5} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -3040,8 +3040,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 8} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -3060,8 +3060,8 @@ Config.Preset.torso = {
                     ['torso2'] = {item = 152, texture = 9} -- check qb-clothing/client/main.lua
                 },
                 extras = {
-                    ['t-shirt'] = {item = 7, texture = 0}, -- check qb-clothing/client/main.lua
-                    ['arms'] = {item = 2, texture = 0} -- check qb-clothing/client/main.lua
+                    ['t-shirt'] = {item = 57, texture = 0}, -- check qb-clothing/client/main.lua
+                    ['arms'] = {item = 1, texture = 0} -- check qb-clothing/client/main.lua
                 },
             },
             female = {
@@ -3137,7 +3137,7 @@ Config.Preset.torso = {
         hinterland_worsk_shirt = {
             male = {
                 main = {
-                    ['torso2'] = {item = 159, texture = 2} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 159, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua
@@ -3146,7 +3146,7 @@ Config.Preset.torso = {
             },
             female = {
                 main = {
-                    ['torso2'] = {item = 156, texture = 2} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 156, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 14, texture = 0}, -- check qb-clothing/client/main.lua
@@ -3317,7 +3317,7 @@ Config.Preset.torso = {
         securoserv_bomber = {
             male = {
                 main = {
-                    ['torso2'] = {item = 165, texture = 0} -- check qb-clothing/client/main.lua
+                    ['torso2'] = {item = 163, texture = 0} -- check qb-clothing/client/main.lua
                 },
                 extras = {
                     ['t-shirt'] = {item = 15, texture = 0}, -- check qb-clothing/client/main.lua

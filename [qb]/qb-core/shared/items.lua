@@ -1131,7 +1131,6 @@ QBShared.Items = {
     chestnut_vinyl 				= {name = 'chestnut_vinyl', 			 	  	label = 'Chestnut Vinyl', 			weight = 500, 		type = 'item', 		image = 'tops.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
     darknut_vinyl 				= {name = 'darknut_vinyl', 			 	  	label = 'Darknut Vinyl', 			weight = 500, 		type = 'item', 		image = 'tops.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
     black_vinyl_cut 				= {name = 'black_vinyl_cut', 			 	  	label = 'Black Vinyl Cut', 			weight = 500, 		type = 'item', 		image = 'tops.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
-
     gray_vinyl_cut 				= {name = 'gray_vinyl_cut', 			 	  	label = 'Gray Vinyl Cut', 			weight = 500, 		type = 'item', 		image = 'tops.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
     ash_vinyl_cut 				= {name = 'ash_vinyl_cut', 			 	  	label = 'Ash Vinyl Cut', 			weight = 500, 		type = 'item', 		image = 'tops.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
     white_vinyl_cut 				= {name = 'white_vinyl_cut', 			 	  	label = 'White Vinyl Cut', 			weight = 500, 		type = 'item', 		image = 'tops.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
@@ -1317,6 +1316,7 @@ QBShared.Items = {
     lo_black_cowboy_boots 				= {name = 'lo_black_cowboy_boots', 			 	  	label = 'Lo Black Cowboy Boots', 			weight = 500, 		type = 'item', 		image = 'shoes.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = ''},
 
     -- nightvision & thermals
+    -- quads
     black_quad_helmet 				= {name = 'black_quad_helmet', 			 	  	label = 'Black Quad Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision + Thermal'},
     moss_quad_helmet 				= {name = 'moss_quad_helmet', 			 	  	label = 'Moss Quad Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision + Thermal'},
     brown_quad_helmet 				= {name = 'brown_quad_helmet', 			 	  	label = 'Brown Quad Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision + Thermal'},
@@ -1332,6 +1332,7 @@ QBShared.Items = {
     pink_camo_quad_helmet 				= {name = 'pink_camo_quad_helmet', 			 	  	label = 'Pink Camo Quad Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision + Thermal'},
     desert_quad_helmet 				= {name = 'desert_quad_helmet', 			 	  	label = 'Desert Quad Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision + Thermal'},
     
+    -- duals
     black_dual_helmet 				= {name = 'black_dual_helmet', 			 	  	label = 'Black Dual Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision'},
     moss_dual_helmet 				= {name = 'moss_dual_helmet', 			 	  	label = 'Moss Dual Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision'},
     brown_dual_helmet 				= {name = 'brown_dual_helmet', 			 	  	label = 'Brown Dual Helmet', 			weight = 900, 		type = 'item', 		image = 'nightvision.png', 		unique = true, 	useable = true, 	shouldClose = true,   combinable = nil,   description = 'Nightvision'},
