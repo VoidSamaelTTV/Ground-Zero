@@ -96,3 +96,26 @@ RegisterNetEvent('consumables:server:toolcrateFinished', function(giftBoxType)
     end
 end)
 
+-- Weapon Case
+QBCore.Functions.CreateUseableItem("weaponcase", function(source, item)
+    TriggerClientEvent("consumables:client:openweaponcase", source, item.name)
+end)
+
+RegisterNetEvent('consumables:server:WeaponCaseFinished', function(giftBoxType)
+    local Player = QBCore.Functions.GetPlayer(source)
+    
+    if Player.Functions.RemoveItem('weaponcase', 1) then
+        TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items['weaponcase'], "remove")
+        
+        local giftItems = Config.GiftBoxes[giftBoxType]
+        
+        if giftItems then
+            for name, amt in pairs(giftItems) do
+                Player.Functions.AddItem(name, amt)
+                TriggerClientEvent("inventory:client:ItemBox", source, QBCore.Shared.Items[name], "add")
+            end
+        else
+        end
+    else
+    end
+end)

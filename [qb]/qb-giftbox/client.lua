@@ -59,7 +59,7 @@ RegisterNetEvent('consumables:client:openAmmocase', function(giftBoxType)
         flags = 49,
     }, {}, {}, function()
         -- Trigger the server event with the gift box type
-        TriggerServerEvent('consumables:server:ammocaseFinished', giftBoxType)
+        TriggerServerEvent('consumables:server:AmmocaseFinished', giftBoxType)
     end, function()
         ClearPedTasks(playerPed)
         QBCore.Functions.Notify("Ok I Guess You Don't Want your rewards", "error")        
@@ -87,4 +87,27 @@ RegisterNetEvent('consumables:client:openToolcrate', function(giftBoxType)
         QBCore.Functions.Notify("Ok I Guess You Don't Want your rewards", "error")        
     end)
 end)
+
+-- Weapon Case
+RegisterNetEvent('consumables:client:openweaponcase', function(giftBoxType)
+    local playerPed = PlayerPedId()
+    
+    QBCore.Functions.Progressbar('weapon_case', 'Opening Weapon Case', 5000, false, true, { 
+        disableMovement = true,
+        disableCarMovement = true,
+        disableMouse = false,
+        disableCombat = true,
+    }, {
+        animDict = 'amb@world_human_clipboard@male@idle_a',
+        anim = 'idle_c',
+        flags = 49,
+    }, {}, {}, function()
+        -- Trigger the server event with the gift box type
+        TriggerServerEvent('consumables:server:WeaponCaseFinished', giftBoxType)
+    end, function()
+        ClearPedTasks(playerPed)
+        QBCore.Functions.Notify("Ok I Guess You Don't Want your rewards", "error")        
+    end)
+end)
+
 

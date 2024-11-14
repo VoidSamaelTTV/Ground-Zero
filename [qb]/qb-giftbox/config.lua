@@ -32,5 +32,11 @@ Config.GiftBoxes = {
         ['weapon_hatchet'] = 1,
         ['codelock'] = 1,
         ['cash'] = 2500,
-    }
+    },
+    ['weaponcase'] = {
+        ['weapon_pistolxm3'] = 1,
+        ['pistol_ammo'] = 8,
+        ['weapon_switchblade'] = 1,
+        ['cash'] = 6500,
+    },
 }
